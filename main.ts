@@ -1,0 +1,11 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`tile1`, function (sprite, location) {
+    game.over(true)
+})
+let myCorg = corgio.create(SpriteKind.Player)
+myCorg.horizontalMovement()
+myCorg.updateSprite()
+myCorg.verticalMovement()
+myCorg.follow()
+myCorg.addToScript("Woof! Woof!")
+myCorg.bark()
+tiles.setTilemap(tilemap`level1`)
